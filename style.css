@@ -7,6 +7,36 @@ header {
   background-position: center;
   background-size: cover;
 }
+.title {
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    rgb(20, 220, 220),
+    #00c3ff,
+    #41aaff,
+    #09eeb5
+  );
+  background-size: 400% 400%;
+  animation: rainbow 5s ease-in-out infinite;
+  background-clip: text;
+  letter-spacing: 1px;
+  -webkit-background-clip: text;
+  transition: color 0.3s ease-in-out;
+}
+.title:hover {
+  color: rgba(0, 0, 0, 0);
+}
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
 .hero {
   top: 50%;
   left: 50%;
@@ -17,11 +47,11 @@ header {
 }
 h1 {
   font-family: moon;
-  font-size: 60px;
+  font-size: 80px;
   letter-spacing: 5px;
 }
 p {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 30px;
   font-family: futura;
 }
@@ -29,10 +59,10 @@ p {
   z-index: 502;
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   position: absolute;
-  left: 60px;
-  top: 60px;
+  left: 5%;
+  top: 28%;
 }
 
 .home-logo a {
@@ -46,8 +76,8 @@ p {
 }
 
 .home-logo img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 /* Countdown */
@@ -83,8 +113,11 @@ li span {
 
 /* Particles */
 #particles-js {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/index.png);
-  height: 0%;
+  background-image: linear-gradient(
+      rgba(46, 46, 46, 0.5),
+      rgba(65, 65, 65, 0.5)
+    ),
+    url(images/index4.png);
+  background-size: cover;
 }
 /* Particles */

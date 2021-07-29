@@ -50,7 +50,7 @@ var x = setInterval(function() {
         hour = minute * 60,
         day = hour * 24;
 
-  let birthday = "January 1, 2022 00:00:00",
+  let birthday = "August 30, 2021 00:00:00",
       countDown = new Date(birthday).getTime(),
       x = setInterval(function() {    
 
