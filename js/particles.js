@@ -20,7 +20,7 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 100,
         density: {
           enable: true,
           value_area: 800
@@ -94,10 +94,6 @@ var pJS = function(tag_id, params){
           enable: true,
           mode: 'grab'
         },
-        onclick: {
-          enable: true,
-          mode: 'push'
-        },
         resize: true
       },
       modes: {
@@ -108,8 +104,6 @@ var pJS = function(tag_id, params){
           }
         },
         bubble:{
-          distance: 200,
-          size: 80,
           duration: 0.4
         },
         repulse:{
